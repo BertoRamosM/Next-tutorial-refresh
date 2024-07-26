@@ -4,15 +4,21 @@ import Hero from '/public/hero.png'
 
 export default function Home() {
   return (
-    <div className="">
-      <div className={styles.texts}>
-        <h1>Better design for you digital products.</h1>
-        <p>Turning your Idea into Reality. We bring together the teams from the global tech industry</p>
+    <div className={styles.container}>
+      <div className={styles.item}>
+        <h1 className={styles.title}>
+          Better design for you digital products.
+        </h1>
+        <p className={styles.desc}>
+          Turning your Idea into Reality. We bring together the teams from the
+          global tech industry
+        </p>
+        <button className={styles.button}>See Our Works</button>
       </div>
 
-      <div className={styles.imgContainer}>
+      <div className={styles.item}>
         <Image src={Hero} alt="" className={styles.image} />
-        </div>
+      </div>
     </div>
   );
 }
