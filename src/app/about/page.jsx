@@ -40,15 +40,16 @@ const About = () => {
         </div>
         <div className={styles.item}>
           <h1 className={styles.title}>What We Do?</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo,
-            laudantium.
+          <p className={styles.desc}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+            quae assumenda inventore facilis unde laborum dolorem fugit, iusto
+            voluptatum illum!
             <br />
             <br />
             Sunt temporibus iusto expedita delectus accusantium voluptatibus
             illo, veritatis aut!
           </p>
-          <Button url="/contact" text="Contact"/>
+          <Button url="/contact" text="Contact" />
         </div>
       </div>
     </div>
