@@ -6,6 +6,8 @@ import styles from "./page.module.css";
 
 
 const Dashboard = () => {
+
+  
     /* const [data, setData] = useState([]);
   const [error, setError] = useState(false);
     const [losding, setLoading] = useState(false);
@@ -28,6 +30,8 @@ const Dashboard = () => {
     getData();
   }, [])
  */
+  
+
   console.log(data)
   
 
