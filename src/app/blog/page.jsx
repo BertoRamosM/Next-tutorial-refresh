@@ -4,9 +4,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 async function getData() {
-  const res = await fetch("https://jsonplaceholder.typicode.com/posts",
-    {cache: "no-store"}
-  );
+  const res = await fetch("http://localhost:3000/api/posts", {
+    cache: "no-store",
+  });
 
   if (!res.ok) {
     throw new Error('Failed to fetch data!')
@@ -25,7 +25,7 @@ const Blog = async () => {
         <Link href={`/blog/${item.id}`} className={styles.container} key={item.id}>
           <div className={styles.imageContainer}>
             <Image
-              src="https://images.pexels.com/photos/707670/pexels-photo-707670.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              src={item.image}
               alt=""
               width={400}
               height={250}

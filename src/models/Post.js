@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const { Schema } = mongoose;
 
-const postSchema = newSchema(
+const postSchema = new Schema(
   {
     title: {
       type: String,
@@ -28,4 +28,7 @@ const postSchema = newSchema(
   { timestamps: true }
 );
 
-export default mongoose.model("Post", postSchema);
+// Check if the model is already defined to avoid OverwriteModelError
+const Post = mongoose.models.Post || mongoose.model("Post", postSchema);
+
+export default Post;
